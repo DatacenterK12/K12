@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}<title>Контакты К12</title>{% endblock %}
+{% block description %}<meta content="Контактная информация дата центр К12" name="description">{% endblock %}
+{% block content %}
+    <div id="wrapper">
+        <div id="content" class="no-top no-bottom">
+            <section class="no-bg no-top mt">
+                <div class="overlay-gradient t70">
+                    <div class="center-y" style="background-color: #fff;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 offset-md-2 text-center">
+                                    <div class="col text-center">
+                                        <div class="spacer-single"></div>
+                                        <h1 class="no-bottom" style="color: #1A1C26;">Контакты</h1>
+                                        <p class="lead">   </p>
+                                    </div>
+                                </div>
+                                <div class="spacer-10"></div>
+                                <div class="col-lg-12 mb-sm-30">
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac095c6813474bfa0ade08bbfefb94717a97dee6b10554ff955dff4e594addaf0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                                </div>
+                                <div class="col-lg-4 mb30">
+                                    <div class="padding40 bg-gradient-to-right-2 text-light rounded">
+                                        <h3>Адрес</h3>
+                                        <address class="s1">
+                                            <span><i class="fa fa-map-marker fa-lg"></i>194100, Санкт-Петербург, Кантемировская ул., д. 12</span>
+                                            <span><i class="fa fa-phone fa-lg"></i>+7 (812) 424-01-02</span>
+                                            <span><i class="fa fa-phone fa-lg"></i>+7 (921) 906-73-03</span>
+                                            <span><i class="fa fa-envelope-o fa-lg"></i><a href="mailto:noc@k12.spb.ru">noc@k12.spb.ru</a></span>
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</section>
+            {% include 'includes/info/Question.html' %}
+        </div>
+    </div>
+{% endblock %}

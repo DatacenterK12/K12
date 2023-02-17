@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}<title>Аренда пространства под оборудование Дата-центр К12</title>{% endblock %}
+{% block description %}<meta content="Аренда пространства под оборудование Дата-центр К12" name="description">{% endblock %}
+{% block content %}
+<div id="content" class="no-top no-bottom">
+    <section class="no-top no-bottom text-light" data-bgimage="url(static/images/background/12.jpg)" data-stellar-background-ratio=".2">
+        <div class="overlay-gradient t80">
+            <div class="center-y mt50">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12 text-lg-left text-center mb-sm-30">
+                            <h1>Аренда пространства под оборудование<span class="label"></span></h1>
+                            <p class="lead">Арендуйте автономную зону с готовыми техническими решениями по безопасности, бесперебойности и связи. Будем рады вашему оборудованию в надежном дата-центре уровня TIER III.</p>
+                            <div class="spacer-half"></div>
+                            <a class="btn-custom" href="#modal-call" data-toggle="modal">Получить предложение</a>
+                        </div>
+                        <div class="col-lg-3 offset-lg-2 col-4 offset-4 text-center">
+                            <img src="{% static 'images/Data-Center.png'%}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="no-bg no-top mt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <!--<h4 class="id-color">Professional Design</h4>-->
+                    </br>
+                    <h2>В услугу входит</h2>
+                    <p></p>
+                    <div class="spacer-20"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="pricing-s2 mb30">
+                            <div class="top">
+                                <img src="{% static 'images/icon-shared-hosting.png'%}" class="size96" alt="">
+                                <div class="inner">
+                                    <div class="clearfix"></div>
+                                    <h2>СКУД и видеонаблюдение</h2>
+                                    <p>Индивидуальные СКУД и видеонаблюдение (наше решение или на выбор заказчика), система мониторинга под клиента.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="pricing-s2 rec mb30">
+                            <div class="inner">
+                                <div class="top">
+                                    <img src="{% static 'images/icon-vps-hosting.png'%}" class="size96" alt="">
+                                    <div class="clearfix"></div>
+                                    <h2>Круглосуточный доступ</h2>
+                                    <p>Круглосуточный и круглогодичный доступ для ваших сотрудников. Специалисты дата-центра могут попасть в зал только по запросу и согласованию с вами.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="pricing-s2 mb30">
+                            <div class="inner">
+                                <div class="top">
+                                    <img src="{% static 'images/icon-cloud-hosting.png' %}" class="size96" alt="">
+                                    <div class="clearfix"></div>
+                                    <h2>60+ операторов </h2>
+                                    <p>Возможность выбрать из доступных у нас 60+ операторов или подключить всех сразу по нашей технологии  <a href="">Ethernet Exchange </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'includes/info/BasicServices.html' %}
+    {% include 'includes/info/Infrastructure.html' %}
+    {% include 'includes/info/Presentation.html' %}
+    {% include 'includes/info/Excursion.html' %}
+    {% include 'includes/info/AdditionalServices.html' %}
+    {% include 'includes/info/Question.html' %}
+</div>
+{% endblock %}

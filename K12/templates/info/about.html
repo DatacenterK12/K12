@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}<title>Информация о дата центре К12</title>{% endblock %}
+{% block description %}<meta content="О дата центре К12" name="description">{% endblock %}
+{% block content %}
+    <div id="wrapper">
+        <div id="content" class="no-top no-bottom">
+            <section class="no-top no-bottom text-light" data-bgimage="url(static/images/background/12.jpg)" data-stellar-background-ratio=".2">
+                <div class="overlay-gradient t80">
+                    <div class="center-y mt50">
+                        <div class="container">
+                            <div class="row align-items-center">
+								<div class="col-lg-6 col-12 text-lg-left text-center mb-sm-30">
+									<h1>О компании К12<span class="label"></span></h1>
+									<p class="lead">Размещение оборудования, виртуальный сервер и серверы VPS/VDS.</p>
+									<div class="spacer-half"></div>
+									<a class="btn-custom" href="#modal-call" data-toggle="modal">Получить предложение</a>
+								</div>
+								<div class="col-lg-3 offset-lg-2 col-4 offset-4 text-center">
+									<img src="{% static 'images/Safety.png'%}" class="img-fluid" alt="">
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			<section class="about-layout2 pt-130 pb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                            <div class="about__img mb-40" >
+                                <img src="{% static '/images/b9182f25625db4429a80c284bfba7c99.jpg'%}" alt="about" style="width: 500px; padding-top: 12px;">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-1">
+                            <div class="heading-layout2 mb-40">
+                                <h2 class="heading__subtitle">Система электроснабжения</h2>
+                                <h3 class="heading__title">Здание дата-центра имеет два независимых ввода электроэнергии 10 Квольт.</h3>
+                            </div>
+                            <div class="about-text-wrapper">
+                                <div class="about__Text">
+                                    <p class="font-weight-bold mb-30">Каждый ввод электропитания обеспечивает мощность 2.4 МВт. Для обеспечения электроснабжения 380 вольт здание оборудовано 4-мя комплектными трансформаторными подстанциями.</p>
+                                    <p>В целях обеспечения резервного электроснабжения установлены 3 дизель-генераторных установки с переключением через АВР, рассчитанные на полную мощность дата центра. Чистое электропитание обеспечивают ИБП имеющие резервирование N+1 для каждой серверной.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-layout2 pt-130 pb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-1">
+                            <div class="heading-layout2 mb-40">
+                                <h2 class="heading__subtitle">Система кондиционирования</h2>
+                                <h3 class="heading__title">Система кондиционирования резервируется по схеме N+2.</h3>
+                            </div>
+                            <div class="about-text-wrapper">
+                                <div class="about__Text">
+                                    <p class="font-weight-bold mb-30">Система кондиционирования обеспечивает чистую схему охлаждения серверного оборудования. Кондиционирование выполнено по принципу «холодных коридоров».</p>
+                                    <p>Поддерживаемая температура составляет 25±2°С.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                            <div class="about__img mb-40">
+                                <img src="{% static '/images/4cfeef63f03e3820706043363936bc7f.jpg'%}" alt="about" style="width: 500px; padding-top: 12px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><section class="about-layout2 pt-130 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                        <div class="about__img mb-40">
+                            <img src="{% static '/images/76b0e2fdddb142216d0f8eb652e81d6d.jpg'%}" alt="about" style="width: 500px; padding-top: 12px;">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-1">
+                        <div class="heading-layout2 mb-40">
+                            <h2 class="heading__subtitle">Система доступа и безопасности</h2>
+                            <h3 class="heading__title">Дата-центр оснащен современными системами контроля доступа.</h3>
+                        </div>
+                        <div class="about-text-wrapper">
+                            <div class="about__Text">
+                                <p class="font-weight-bold mb-30">Каждое помещение дата-центра оборудовано отдельной системой контроля и учета доступа по электронным ключам, видеокамерами и датчиками пожарной и охранной сигнализации.</p>
+                                <p>Двойной контроль на проходной предотвращает возможность несанкционированного доступа, как на территорию, так и в серверные помещения. На территории дата-центра организованы СКУД и видеонаблюдение.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <section class="about-layout2 pt-130 pb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-1">
+                            <div class="heading-layout2 mb-40">
+                                <h2 class="heading__subtitle">Техподдержка</h2>
+                                <h3 class="heading__title">Квалифицированные сотрудники круглосуточно контролируют работу всех систем дата-центра.</h3>
+                            </div>
+                            <div class="about-text-wrapper">
+                                <div class="about__Text">
+                                    <p class="font-weight-bold mb-30"> </p>
+                                    <p>Организован постоянный мониторинг всех инженерных систем дата центра. Круглосуточная служба технической поддержки обеспечивает установку, настройку и другие виды обслуживания клиентского оборудования. Обслуживание всех инженерных систем дата-центра проводятся также по договорам подряда сертифицированными специалистами. Организована система онлайн заявок на посещение дата центра и обслуживание оборудования клиентов.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                            <div class="about__img mb-40">
+                                <img src="{% static '/images/39ce6b1c89424da851bcfcc0cfa247be.jpg'%}" alt="about" style="width: 500px; padding-top: 12px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% include 'includes/info/Excursion.html' %}
+            {% include 'includes/info/BasicServices.html' %}
+            {% include 'includes/info/Question.html' %}
+        </div>
+    </div>
+{% endblock %}

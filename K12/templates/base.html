@@ -1,0 +1,108 @@
+{% load static %}
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="{% static 'images/icon.png' %}" type="image/gif" sizes="24x24">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap.rtl.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap.rtl.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-grid.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-grid.rtl.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-grid.rtl.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-reboot.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-reboot.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-reboot.rtl.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-reboot.rtl.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-utilities.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-utilities.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-utilities.rtl.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap-utilities.rtl.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/owl.transitions.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/jquery.countdown.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fonts/font-awesome-5/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fonts/font-awesome-4/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fonts/font-awesome-5/css/fontawesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fonts/elegant_font/HTML_CSS/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fonts/et-line-font/style.css' %}" rel="stylesheet" type="text/css">
+    <link id="colors" href="{% static 'css/colors/scheme-01.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/coloring.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'revolution/css/settings.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'revolution/css/layers.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'revolution/css/navigation.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/rev-settings.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    {% block title %}{% endblock %}
+    {% block description %}{% endblock %}
+</head>
+<body>
+{% include 'includes/Header.html' %}
+<main>
+    {% block content %}
+        Отстутствует контент :(
+    {% endblock %}
+</main>
+{% include 'includes/pop-up_windows/call-bs.html' %}
+{% include 'includes/pop-up_windows/order.html' %}
+{% include 'includes/pop-up_windows/preloader.html' %}
+{% include 'includes/pop-up_windows/price.html' %}
+{% include 'includes/pop-up_windows/privacy.html' %}
+{% include 'includes/pop-up_windows/thank-you.html' %}
+{% include 'includes/Footer.html' %}
+<script src="{% static 'js/form.js' %}"></script>
+<script src="{% static 'js/jquery.min.js' %}">crossorigin = "anonymous" ></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.esm.js' %}"></script>
+<script src="{% static 'js/bootstrap.esm.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+<script src="{% static 'js/easing.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<script src="{% static 'js/validation.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/enquire.min.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/jquery.plugin.js' %}"></script>
+<script src="{% static 'js/typed.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.js' %}"></script>
+<script src="{% static 'js/designesia.js' %}"></script>
+<script src="{% static 'revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script src="{% static 'revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script type="text/javascript">
+    var frm = $('#call-form');
+    frm.submit(function () {
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+        });
+        return false;
+    });
+</script>
+{% block script %}
+{% endblock %}
+</body>
+</html>
