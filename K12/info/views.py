@@ -1,9 +1,9 @@
-from django.shortcuts import render
 from django.views.generic.base import TemplateView
 from django.http import JsonResponse
-from django.shortcuts import redirect
 from .forms import PhoneForm
-# Create your views here.
+
+from . import send_mail
+
 
 def OrderCall(request):
     form = PhoneForm()
@@ -11,7 +11,7 @@ def OrderCall(request):
         form = PhoneForm(request.POST)
         if form.is_valid():
             phone = form.cleaned_data['phone']
-            print(phone)
+            send_mail.send_mail(phone)
             return JsonResponse({"status": "Запрос отправлен!"}, status=200)
         else:
             errors = form.errors.as_json()
