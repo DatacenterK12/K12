@@ -2,37 +2,15 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const close = document.getElementById('button-close');
-    const form = document.getElementById('form-call');
-
+    const form = document.getElementById('call-form');
+    
     form.addEventListener('submit', function(){
-        form.style.visibility = 'hidden';
-        const success = document.getElementById('modal-success');
-        success.classList.add('show');
-        success.style.visibility = 'visible';
-        close.style.visibility = 'visible';
-        // close.click();
+        const call = document.querySelector("#call1");
+        call.outerHTML = '<div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal">×</button><h4 class="modal-title">Спасибо за заявку!</h4></div><div class="modal-body" style="background-size: cover"><div class="form-group" style="background-size: cover">Пожалуйста, ожидайте звонка нашего специалиста!</div></div></div>';
     })
-    form.addEventListener('submit', formSend);
+    form.addEventListener('submit1', formSend);
 
-    async function formSend(e) {
-        e.preventDefault();
 
-        let formData = new FormData(form);
-
-            let response = await fetch ('sendmail.php', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (response.ok) {
-                let result = await response.json();
-                alert(result.message);
-                form.reset();
-            } else {
-                alert('Ошибка!');
-            }
-        
-    }
 });
 
     
