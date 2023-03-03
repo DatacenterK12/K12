@@ -1,11 +1,12 @@
 from django.views.generic.base import TemplateView
 from django.http import JsonResponse
-from .forms import PhoneForm
+from django.shortcuts import get_object_or_404, render
 
+from .forms import PhoneForm
 from . import send_mail
 
 
-def OrderCall(request):
+def order_call(request):
     form = PhoneForm()
     if request.method == "POST" and request.is_ajax():
         form = PhoneForm(request.POST)
@@ -56,3 +57,4 @@ class Contact(TemplateView):
 
 class Thanks(TemplateView):
     template_name = 'info/thanks.html'
+
