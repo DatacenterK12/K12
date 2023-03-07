@@ -9,11 +9,11 @@
                             <h5>Colocation</h5>
                             <div class="tiny-border"></div>
                             <ul>
-                                <li><a href="razm-serv.html">Аренда стоек</a></li>
-                                <li><a href="hosting-vps.html">Аренда юнитов</a></li>
-                                <li><a href="mesto-pod-col.html">Место под стойку</a></li>
-                                <li><a href="kross.html">Кроссировки</a></li>
-                                <li><a href="obslujivanie.html">Обслуживание</a></li>
+                                <li><a href="{% url 'info:RentOfServerRacks' %}">Аренда стоек</a></li>
+                                <li><a href="{% url 'info:ServerPlacement' %}">Аренда юнитов</a></li>
+                                <li><a href="{% url 'info:RentOfSpaceForEquipment' %}">Место под стойку</a></li>
+                                <li><a href="{% url 'info:Crossing' %}">Кроссировки</a></li>
+                                <li><a href="{% url 'info:Service' %}">Обслуживание</a></li>
                             </ul>
                         </div>
                     </div>
@@ -22,8 +22,8 @@
                             <h5>Услуги связи</h5>
                             <div class="tiny-border"></div>
                             <ul>
-                                <li><a href="kross.html">Кроссировки</a></li>
-                                <li><a href="dostinternet.html">Доступ к интернету</a></li>
+                                <li><a href="{% url 'info:Crossing' %}">Кроссировки</a></li>
+                                <li><a href="{% url 'info:InternetAccess' %}">Доступ к интернету</a></li>
                             </ul>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 sm-text-center mb-sm-30">
-                <div class="mt10">&copy; Все права защищены 2022</div>
+                <div class="btn-line" data-bs-toggle="modal" data-bs-target="#modal-privacy">&copy; Все права защищены 2022</div>
             </div>
             <div class="col-md-6 text-md-right text-sm-left">
                 <div class="mt11"><p>Информация представленая на сайте не является офертой.</p></div>
