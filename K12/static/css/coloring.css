@@ -172,7 +172,7 @@ header.header-gradient,
 header.smaller.header-light #topbar,
 .header-light.smaller #mainmenu > li > a span
 {
-background-image:linear-gradient(to right, var(--primary-color-1), var(--primary-color-2));
+	background-image:linear-gradient(to right, var(--primary-color-1), var(--primary-color-2));
 }
 
 
