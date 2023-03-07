@@ -80,5 +80,8 @@ class UserCompany(models.Model):
         blank=False,
         null=False,
         related_name="User",
-        verbose_name='Пользователь',
+        verbose_name="Пользователь",
     )
+
+    def __str__(self):
+        return self.company.title
