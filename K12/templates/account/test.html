@@ -24,7 +24,7 @@
         <br>
         <br>
     {% endfor %}
-    {% thumbnail company.image "125x125" crop="center" upscale=True as im %}
+    {% thumbnail company.image "1000x1000" crop="left" upscale=True as im %}
         <img src="{{ im.url }}" alt="Потерялся(">
     {% endthumbnail %}
 {% endblock %}

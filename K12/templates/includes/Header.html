@@ -47,7 +47,11 @@
                             <li><a href="{% url 'info:Contact' %}">Контакты</a></li>
                         </ul>
                         <div class="col-right">
-                            <a class="btn-custom" href="https://newaccount1605779480632.freshdesk.com/support/login"><i class="fa fa-lock"></i> Login</a>
+                            {% if user.username %}
+                                <a class="btn-custom" href="{% url 'users:login' %}">{{ user.username }}</a>
+                            {% else %}
+                                <a class="btn-custom" href="{% url 'users:login' %}"><i class="fa fa-lock"></i> Login </a>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="clearfix"></div>

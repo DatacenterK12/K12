@@ -1,9 +1,10 @@
 from django.views.generic.base import TemplateView
 from django.http import JsonResponse
+from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404, render
 
 from .forms import PhoneForm
-from . import send_mail
+
 
 
 def order_call(request):
@@ -12,7 +13,7 @@ def order_call(request):
         form = PhoneForm(request.POST)
         if form.is_valid():
             phone = form.cleaned_data['phone']
-            send_mail.send_mail(phone)
+            send_mail('Заказ обратного звонка', phone, 'flexa@k12.spb.ru', ['ep@k12.spb.ru', ])
             return JsonResponse({"status": "Запрос отправлен!"}, status=200)
         else:
             errors = form.errors.as_json()
