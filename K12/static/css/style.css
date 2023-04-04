@@ -239,7 +239,7 @@ header.smaller #mainmenu > li > a span{
 }
 header.smaller {
 	height: 70px;
-	background: rgba(0, 0, 0, .8);
+	background-image: linear-gradient(to right, var(--primary-color-1), var(--primary-color-2));
 	position: fixed;
 	top: 0px;
 	padding:0;
@@ -741,7 +741,7 @@ header.header-mobile.header-light #menu-btn {
 /* ================================================== */
 
 section {
-	padding: 90px 0 90px 0;
+	padding: 40px 0 40px 0;
 	position: relative;
 	background: #ffffff;
 }
@@ -2126,7 +2126,7 @@ a.btn-border.light:hover{
 	margin: 0 auto;
 	padding-top: 12px;
 	position: absolute;
-	top: 5%;
+	top: 30px;
 	left: 92%;
 	right: 0;
 }
@@ -3214,7 +3214,6 @@ i.font60{
 	display:block;
 	font-size:20px;
 	color:#ffffff;
-	background:#333333;
 	width:48px;
 	height:48px;
 	padding:12px 12px;
@@ -3449,7 +3448,6 @@ i.font60{
 	font-size: 22px;
 	margin-bottom: 5px;
 	letter-spacing:normal;
-	background:#333333;
 	padding:8px 15px;
 	border-radius:60px;
 	-moz-border-radius:60px;
@@ -3712,10 +3710,6 @@ i.font60{
 
 .pricing-s2 .inner{
 	padding-bottom:10px;
-}
-
-.pricing-s2.bg .inner{
-	background: rgba(var(--primary-color-1-rgb), .8);
 }
 
 .pricing-s2.bg-2 .inner{

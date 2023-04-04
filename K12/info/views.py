@@ -1,17 +1,21 @@
-from django.shortcuts import render
 from django.views.generic.base import TemplateView
 from django.http import JsonResponse
-from django.shortcuts import redirect
-from .forms import PhoneForm
-# Create your views here.
+from django.core.mail import send_mail
+from django.shortcuts import get_object_or_404, render
 
-def OrderCall(request):
+from .forms import PhoneForm
+
+
+
+def order_call(request):
     form = PhoneForm()
     if request.method == "POST" and request.is_ajax():
         form = PhoneForm(request.POST)
         if form.is_valid():
             phone = form.cleaned_data['phone']
-            print(phone)
+            name = form.cleaned_data['name']
+            subject = form.cleaned_data['subject']
+            send_mail('Заказ обратного звонка', f'{subject}\n{name}\n{str(phone)}', 'flexa@k12.spb.ru', ['ep@k12.spb.ru', ])
             return JsonResponse({"status": "Запрос отправлен!"}, status=200)
         else:
             errors = form.errors.as_json()
@@ -56,3 +60,4 @@ class Contact(TemplateView):
 
 class Thanks(TemplateView):
     template_name = 'info/thanks.html'
+
