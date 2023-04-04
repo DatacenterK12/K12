@@ -13,7 +13,9 @@ def order_call(request):
         form = PhoneForm(request.POST)
         if form.is_valid():
             phone = form.cleaned_data['phone']
-            send_mail('Заказ обратного звонка', phone, 'flexa@k12.spb.ru', ['ep@k12.spb.ru', ])
+            name = form.cleaned_data['name']
+            subject = form.cleaned_data['subject']
+            send_mail('Заказ обратного звонка', f'{subject}\n{name}\n{str(phone)}', 'flexa@k12.spb.ru', ['ep@k12.spb.ru', ])
             return JsonResponse({"status": "Запрос отправлен!"}, status=200)
         else:
             errors = form.errors.as_json()
