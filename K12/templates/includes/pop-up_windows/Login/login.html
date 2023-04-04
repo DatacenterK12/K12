@@ -1,0 +1,26 @@
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="loginbase">
+                <button type="button" class="btn-close" data-bs-dismiss="modal">×</button>
+                <div class="modal-header">
+                    <h4 class="modal-title">Авторизация</h4>
+                </div>
+                <div class="modal-body" style="background-size: cover">
+                    <div class="form-group" style="background-size: cover">
+                        <form action="{% url 'info:OrderCall' %}" method="post" id="call-form">
+                            {% csrf_token %}
+                            <h4 class="modal-body-login">Логин</h4>
+                            <input type="email" name="email" class="form-control" required>
+                            <h4 class="modal-body-login">Пароль</h4>
+                            <input type="password" name="password" class="form-control" required>
+                            
+                            <button type="submit" class="btn btn-light">Войти</button>
+                            <button type="submit" class="btn main-btn form-btn">Регистрация</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
