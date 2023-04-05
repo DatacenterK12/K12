@@ -47,11 +47,15 @@
                             <li><a href="{% url 'info:Contact' %}">Контакты</a></li>
                         </ul>
                         <div class="col-right">
+<<<<<<< HEAD
                             {% if user.username %}
                                 <a class="btn-custom" href="{% url 'users:login' %}">{{ user.username }}</a>
                             {% else %}
                                 <a class="btn-custom" href="{% url 'users:login' %}"><i class="fa fa-lock"></i> Login </a>
                             {% endif %}
+=======
+                            <a class="btn-custom" data-bs-toggle="modal" data-bs-target="#modalLogin"><i class="fa fa-lock"></i> Login</a>
+>>>>>>> 4c92bf26234fef03a73a8dec0b27a54864a1fd3b
                         </div>
                     </div>
                     <div class="clearfix"></div>
