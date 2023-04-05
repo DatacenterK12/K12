@@ -2118,7 +2118,7 @@ a.btn-border.light:hover{
 	display: block;
 	text-align: center;
 	width: 20px;
-	height: 20px;
+	height: 24px;
 	background: transparent;
 	font-size: 32px;
 	font-weight: bold;
@@ -2126,10 +2126,143 @@ a.btn-border.light:hover{
 	margin: 0 auto;
 	padding-top: 12px;
 	position: absolute;
-	top: 30px;
-	left: 92%;
-	right: 0;
+	top: 0%;
+	right: 2%;
 }
+
+.container1 {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 120px;
+	background: #27282c;
+  }
+  
+  .button1 {
+	position: relative;
+	padding: 16px 30px;
+	font-size: 1.5rem;
+	color: var(--color);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	text-shadow: 0 0 15px var(--color);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	transition: 0.5s;
+	z-index: 1;
+  }
+  
+  .button1:hover {
+	color: #fff;
+	border: 2px solid rgba(0, 0, 0, 0);
+	box-shadow: 0 0 0px var(--color);
+  }
+  
+  .button1::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color);
+	z-index: -1;
+	transform: scale(0);
+	transition: 0.5s;
+  }
+  
+  .button1:hover::before {
+	transform: scale(1);
+	transition-delay: 0.5s;
+	box-shadow: 0 0 10px var(--color),
+	  0 0 30px var(--color),
+	  0 0 60px var(--color);
+  }
+  
+  .button1 span {
+	position: absolute;
+	background: var(--color);
+	pointer-events: none;
+	border-radius: 2px;
+	box-shadow: 0 0 10px var(--color),
+	  0 0 20px var(--color),
+	  0 0 30px var(--color),
+	  0 0 50px var(--color),
+	  0 0 100px var(--color);
+	transition: 0.5s ease-in-out;
+	transition-delay: 0.25s;
+  }
+  
+  .button1:hover span {
+	opacity: 0;
+	transition-delay: 0s;
+  }
+  
+  .button1 span:nth-child(1),
+  .button1 span:nth-child(3) {
+	width: 40px;
+	height: 4px;
+  }
+  
+  .button1:hover span:nth-child(1),
+  .button1:hover span:nth-child(3) {
+	transform: translateX(0);
+  }
+  
+  .button1 span:nth-child(2),
+  .button1 span:nth-child(4) {
+	width: 4px;
+	height: 40px;
+  }
+  
+  .button1:hover span:nth-child(1),
+  .button1:hover span:nth-child(3) {
+	transform: translateY(0);
+  }
+  
+  .button1 span:nth-child(1) {
+	top: calc(50% - 2px);
+	left: -50px;
+	transform-origin: left;
+  }
+  
+  .button1:hover span:nth-child(1) {
+	left: 50%;
+  }
+  
+  .button1 span:nth-child(3) {
+	top: calc(50% - 2px);
+	right: -50px;
+	transform-origin: right;
+  }
+  
+  .button1:hover span:nth-child(3) {
+	right: 50%;
+  }
+  
+  .button1 span:nth-child(2) {
+	left: calc(50% - 2px);
+	top: -50px;
+	transform-origin: top;
+  }
+  
+  .button1:hover span:nth-child(2) {
+	top: 50%;
+  }
+  
+  .button1 span:nth-child(4) {
+	left: calc(50% - 2px);
+	bottom: -50px;
+	transform-origin: bottom;
+  }
+  
+  .button1:hover span:nth-child(4 ) {
+	bottom: 50%;
+  }
 
 a.btn-link{
 	display:block;
@@ -9942,8 +10075,15 @@ a, img {
 .modal-header {
     padding: 30px 30px 0;
     border: none;
-    text-align: left;
+    text-align: center;
     font-size: 16px;
+	justify-content: center;
+}
+
+.modal-title-login {
+	font-size: 20px;
+    margin-bottom: 10px;
+	text-align: end;
 }
 
 .modal-title {
@@ -9956,6 +10096,13 @@ a, img {
     padding: 20px 30px 30px;
 }
 
+.modal-body-login {
+	display: flex;
+    position: relative;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
 .modal-body button.main-btn{
     width: 100%;
 }
@@ -9966,6 +10113,15 @@ a, img {
     border-radius: 30px;
     height: auto;
     font-size: 18px;
+	margin-bottom: 25px;
+}
+
+.modal-body .form-control-login {
+    text-align: center;
+    padding: 3% 30px;
+    border-radius: 30px;
+    height: auto;
+    font-size: 18px;
 }
 
 #modal-order .after-modal-title {
@@ -9973,6 +10129,8 @@ a, img {
     border-bottom: 1px solid#ccc;
     padding-bottom: 20px;
 }
+
+
 
 button.close {
     font-size: 40px;
@@ -10062,6 +10220,7 @@ fieldset[disabled] .modal-dis{
     }
 
     .modal-header {
+		display: flex;
         padding: 30px 20px 0;
         font-size: 14px;
         text-align: center;
@@ -10072,6 +10231,46 @@ fieldset[disabled] .modal-dis{
         top: 7px;
         right: 11px;
     }
+
+	.btn-close {
+		color: #000;
+		cursor: pointer;
+		text-align: center;
+		display: block;
+		text-align: center;
+		width: 20px;
+		height: 24px;
+		background: transparent;
+		font-size: 32px;
+		font-weight: bold;
+		text-decoration: none;
+		margin: 0 auto;
+		padding-top: 12px;
+		position: absolute;
+		top: 3%;
+		right: -42%;
+	}
+}
+
+@media(width: 820px){
+	.btn-close {
+		color: #000;
+		cursor: pointer;
+		text-align: center;
+		display: block;
+		text-align: center;
+		width: 20px;
+		height: 24px;
+		background: transparent;
+		font-size: 32px;
+		font-weight: bold;
+		text-decoration: none;
+		margin: 0 auto;
+		padding-top: 12px;
+		position: absolute;
+		top: 3%;
+		right: -42%;
+	}
 }
 
 #modal-success {
@@ -10081,3 +10280,4 @@ fieldset[disabled] .modal-dis{
 #modal-success.show {
 	margin-top: -44%;
 }
+
