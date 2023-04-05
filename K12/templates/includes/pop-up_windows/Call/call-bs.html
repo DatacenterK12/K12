@@ -1,0 +1,28 @@
+<div class="modal fade" id="modalCall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="call1">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">×</button>
+                    <h4 class="modal-title">Заказать обратный звонок</h4>
+                    <p class="after-modal-title">
+                        Оставьте свой номер телефона
+                        <br>
+                        и наши менеджеры свяжутся с вами в ближайшее время
+                    </p>
+                </div>
+                <div class="modal-body" style="background-size: cover">
+                    <div class="form-group" style="background-size: cover">
+                        <form action="{% url 'info:OrderCall' %}" method="post" id="call-form">
+                            {% csrf_token %}
+                            <input type="text" name="subject" class="form-control" placeholder="Тема обращения" required>
+                            <input type="text" name="name" class="form-control" placeholder="ФИО" required>
+                            <input type="text" name="phone" class="form-control phone-mask" placeholder="+7 (999) 999-99-99" required>
+                            <button type="submit" class="btn main-btn form-btn">Перезвоните мне</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

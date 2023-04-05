@@ -1,0 +1,67 @@
+{%load static%}
+<header class="header-s1 has-topbar" >
+    <div id="topbar" class="text-white">
+        <div class="container">
+            <div class="topbar-left">
+                <span class="topbar-widget">
+                    <a href="#"><strong>Технические работы: <span class="uptitle"style="color: #54d575;">НЕ ПРОВОДЯТСЯ</span> </strong></a>
+                </span>
+            </div>
+            <div class="topbar-right">
+                <div class="topbar-widget sm-hide"><a href="tel:+78124240102"><i class="fa fa-phone"></i>+7 (812) 424-01-02</a></div>
+                <div class="topbar-widget sm-hide"><a href="tel:+79219067303"><i class="fa fa-phone"></i>+7 (921) 906-73-03</a></div>
+                <div class="topbar-widget sm-hide"><a href="mailto:noc@k12.spb.ru"><i class="fa fa-envelope-o"></i>Поддержка</a></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-row">
+                    <div class="header-col left">
+                        <div id="logo">
+                            <a href="{% url 'info:index' %}"><img alt="" class="logo" src="{% static 'images/logo-light.png'%}"> <img alt="" class="logo-2" src="{% static 'images/logo-dark.png'%}"></a>
+                        </div>
+                    </div>
+                    <div class="header-col mid">
+                        <ul id="mainmenu">
+                            <li><a href="#">Размещение<span>-5%</span></a>
+                                <ul>
+                                    <li><a href="{% url 'users:test' %}">Тестовая страница</a></li>
+                                    <li><a href="{% url 'info:ServerPlacement' %}">Аренда юнитов</a></li>
+                                    <li><a href="{% url 'info:RentOfServerRacks' %}">Аренда стоек<span>-5%</span></a></li>
+                                    <li><a href="{% url 'info:RentOfSpaceForEquipment' %}">Место под стойку</a></li>
+                                    <li><a href="{% url 'info:Crossing' %}">Кроссировки</a></li>
+                                    <li><a href="{% url 'info:Service' %}">Обслуживание</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Услуги связи</a>
+                                <ul>
+                                    <li><a href="{% url 'info:Crossing' %}">Кроссировки</a></li>
+                                    <li><a href="{% url 'info:InternetAccess' %}">Доступ к интернету</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'info:About' %}">О компании</a>
+                            </li>
+                            <li><a href="{% url 'info:Contact' %}">Контакты</a></li>
+                        </ul>
+                        <div class="col-right">
+<<<<<<< HEAD
+                            {% if user.username %}
+                                <a class="btn-custom" href="{% url 'users:login' %}">{{ user.username }}</a>
+                            {% else %}
+                                <a class="btn-custom" href="{% url 'users:login' %}"><i class="fa fa-lock"></i> Login </a>
+                            {% endif %}
+=======
+                            <a class="btn-custom" data-bs-toggle="modal" data-bs-target="#modalLogin"><i class="fa fa-lock"></i> Login</a>
+>>>>>>> 4c92bf26234fef03a73a8dec0b27a54864a1fd3b
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <span id="menu-btn"></span>
+            </div>
+        </div>
+    </div>
+</header>
