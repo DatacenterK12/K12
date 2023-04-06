@@ -10291,14 +10291,26 @@ fieldset[disabled] .modal-dis{
     width: 25%;
 	margin-left: 16.666667%;
 }
+.col-plvps2{
+	flex: 0 0 25%;
+	width: 25%;
+	margin-right: 16.666667%;
+}
 @media (max-width: 920px){
 	.col-plvps{
-		flex: 0 0 25%;
+		flex: 0 0 50%;
 		width: 25%;
-		margin-left: 33.333333%;
+		margin-left: 26%;
+		margin-top: 10%;
 	}
 	.col-pl{
 		flex: 0 0 auto;
 		width: auto;
+	}
+	.col-plvps2{
+		flex: 0 0 50%;
+		width: 25%;
+		margin-left: 26%;
+		margin-top: 10%;
 	}
 }
