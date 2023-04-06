@@ -43,8 +43,4 @@ urlpatterns = [
          views.order_call,
          name="OrderCall",
          ),
-    path("thanks/",
-         views.Thanks.as_view(),
-         name="Thanks",
-         ),
 ]
