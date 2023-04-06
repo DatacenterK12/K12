@@ -10252,7 +10252,7 @@ fieldset[disabled] .modal-dis{
 	}
 }
 
-@media(width: 820px){
+{
 	.btn-close {
 		color: #000;
 		cursor: pointer;
@@ -10281,3 +10281,24 @@ fieldset[disabled] .modal-dis{
 	margin-top: -44%;
 }
 
+.col-pl{
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.col-plvps{
+    flex: 0 0 25%;
+    width: 25%;
+	margin-left: 16.666667%;
+}
+@media (max-width: 920px){
+	.col-plvps{
+		flex: 0 0 25%;
+		width: 25%;
+		margin-left: 33.333333%;
+	}
+	.col-pl{
+		flex: 0 0 auto;
+		width: auto;
+	}
+}
