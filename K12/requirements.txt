@@ -24,10 +24,7 @@ mccabe==0.7.0
 packaging==23.0
 phonenumberslite==8.13.6
 Pillow==9.4.0
-<<<<<<< HEAD:K12/requirements.txt
 psycopg2-binary==2.8.6
-=======
->>>>>>> 4c92bf26234fef03a73a8dec0b27a54864a1fd3b:requirements.txt
 pycodestyle==2.9.1
 pyflakes==2.5.0
 python-dotenv==0.21.0

@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
     'testserver',
     '158.160.33.246',
     '192.168.0.167',
+    'web',
 ]
 
 # Application definition
@@ -125,13 +126,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
-
-STATIC_URL = '/static/'
-
-STATIC_ROOT = '/static_root/'
+# Email data
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'mail.nic.ru'
@@ -140,19 +135,20 @@ EMAIL_HOST_USER = 'flexa@k12.spb.ru'
 DEFAULT_FROM_EMAIL = 'flexa@k12.spb.ru'
 EMAIL_HOST_PASSWORD = 'RG8tku95'
 
+# Static data
+
+STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+# Media data
 
 MEDIA_URL = '/media/'
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'users:login'
-
 LOGIN_REDIRECT_URL = 'info:index'
-
 LOGOUT_REDIRECT_URL = 'info:index'
 
