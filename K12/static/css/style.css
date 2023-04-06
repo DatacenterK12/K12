@@ -2126,7 +2126,7 @@ a.btn-border.light:hover{
 	margin: 0 auto;
 	padding-top: 12px;
 	position: absolute;
-	top: 0%;
+	top: 3%;
 	right: 2%;
 }
 
@@ -10247,31 +10247,11 @@ fieldset[disabled] .modal-dis{
 		margin: 0 auto;
 		padding-top: 12px;
 		position: absolute;
-		top: 3%;
-		right: -42%;
+		top: 2%;
+		right: 1%;
 	}
 }
 
-{
-	.btn-close {
-		color: #000;
-		cursor: pointer;
-		text-align: center;
-		display: block;
-		text-align: center;
-		width: 20px;
-		height: 24px;
-		background: transparent;
-		font-size: 32px;
-		font-weight: bold;
-		text-decoration: none;
-		margin: 0 auto;
-		padding-top: 12px;
-		position: absolute;
-		top: 3%;
-		right: -42%;
-	}
-}
 
 #modal-success {
 	visibility: hidden;
@@ -10313,4 +10293,19 @@ fieldset[disabled] .modal-dis{
 		margin-left: 26%;
 		margin-top: 10%;
 	}
+	.callcenter{
+		padding-top: 20%; 
+		padding-left: 17px; 
+		padding-right: 17px;
+	}
+}
+
+.calltext{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.callcenter{
+	padding-left: 17px; 
+	padding-right: 17px;
 }
