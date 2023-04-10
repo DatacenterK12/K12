@@ -320,6 +320,7 @@ header.header-full{
 
 header .header-row{
 	text-align:center;
+	margin-right: 5%;
 }
 
 header .header-col{
@@ -926,6 +927,7 @@ header.header-mobile.has-topbar .header-col{
 header.header-mobile.has-topbar #topbar{
 	margin-top:-15px;
 	padding:0;
+	display: none;
 }
 header.header-mobile nav{
 	float:none;
@@ -4093,7 +4095,8 @@ i.font60{
 .col-right{
 	display:inline-block;
 	float:right;
-	margin-top:22px;
+	margin-top:-54px;
+	margin-right: -2%;
 }
 
 /*
@@ -9313,8 +9316,8 @@ a, img {
 	
 	.col-right{
 	position:absolute;
-	top:-82px;
-	right:60px;
+	top:88px;
+	right:15%;
 	width:140px;
 	}
 	
@@ -9340,8 +9343,9 @@ a, img {
 	}
 	header .header-col.mid{
 		position:absolute;
-		top:70px;
-		width:100%;
+		top:75px;
+		width:95%;
+		right: 0%;
 		padding:0 0 0 0;
 	}
 	
