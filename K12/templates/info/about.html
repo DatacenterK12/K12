@@ -5,18 +5,17 @@
 {% block content %}
     <div id="wrapper">
         <div id="content" class="no-top no-bottom">
-            <section class="no-top no-bottom text-light" data-bgimage="url(static/images/background/12.jpg)" data-stellar-background-ratio=".2">
+            <section class="no-top no-bottom text-light" data-bgimage="url({% static 'images/background/12.jpg' %})" data-stellar-background-ratio=".2">
                 <div class="overlay-gradient t80">
                     <div class="center-y mt50">
                         <div class="container">
                             <div class="row align-items-center">
-								<div class="col-lg-6 col-12 text-lg-left text-center mb-sm-30">
+								<div class="col-pl text-center-sm">
 									<h1>О компании К12<span class="label"></span></h1>
 									<p class="lead">Размещение оборудования, виртуальный сервер и серверы VPS/VDS.</p>
 									<div class="spacer-half"></div>
-									<a class="btn-custom" href="#modal-call" data-toggle="modal">Получить предложение</a>
 								</div>
-								<div class="col-lg-3 offset-lg-2 col-4 offset-4 text-center">
+								<div class="col-plvps" style="background-size: cover">
 									<img src="{% static 'images/Safety.png'%}" class="img-fluid" alt="">
 								</div>
                             </div>
@@ -27,12 +26,12 @@
 			<section class="about-layout2 pt-130 pb-90">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                        <div class="col-plvps2 align-self-center" style="background-size: cover">
                             <div class="about__img mb-40" >
-                                <img src="{% static '/images/b9182f25625db4429a80c284bfba7c99.jpg'%}" alt="about" style="width: 500px; padding-top: 12px;">
+                                <img src="{% static '/images/b9182f25625db4429a80c284bfba7c99.jpg'%}" alt="about" class="img-fluid">
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-1">
+                        <div class="col-pl text-center-sm">
                             <div class="heading-layout2 mb-40">
                                 <h2 class="heading__subtitle">Система электроснабжения</h2>
                                 <h3 class="heading__title">Здание дата-центра имеет два независимых ввода электроэнергии 10 Квольт.</h3>
@@ -50,7 +49,7 @@
             <section class="about-layout2 pt-130 pb-90">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-1">
+                        <div class="col-pl text-center-sm">
                             <div class="heading-layout2 mb-40">
                                 <h2 class="heading__subtitle">Система кондиционирования</h2>
                                 <h3 class="heading__title">Система кондиционирования резервируется по схеме N+2.</h3>
@@ -62,9 +61,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                        <div class="col-plvps align-self-center" style="background-size: cover">
                             <div class="about__img mb-40">
-                                <img src="{% static '/images/4cfeef63f03e3820706043363936bc7f.jpg'%}" alt="about" style="width: 500px; padding-top: 12px;">
+                                <img src="{% static '/images/4cfeef63f03e3820706043363936bc7f.jpg'%}" alt="about" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -72,12 +71,12 @@
             </section><section class="about-layout2 pt-130 pb-90">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                    <div class="col-plvps2 align-self-center" style="background-size: cover">
                         <div class="about__img mb-40">
-                            <img src="{% static '/images/76b0e2fdddb142216d0f8eb652e81d6d.jpg'%}" alt="about" style="width: 500px; padding-top: 12px;">
+                            <img src="{% static '/images/76b0e2fdddb142216d0f8eb652e81d6d.jpg'%}" alt="about" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-1">
+                    <div class="col-pl text-center-sm">
                         <div class="heading-layout2 mb-40">
                             <h2 class="heading__subtitle">Система доступа и безопасности</h2>
                             <h3 class="heading__title">Дата-центр оснащен современными системами контроля доступа.</h3>
@@ -95,7 +94,7 @@
             <section class="about-layout2 pt-130 pb-90">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-1">
+                        <div class="col-pl text-center-sm">
                             <div class="heading-layout2 mb-40">
                                 <h2 class="heading__subtitle">Техподдержка</h2>
                                 <h3 class="heading__title">Квалифицированные сотрудники круглосуточно контролируют работу всех систем дата-центра.</h3>
@@ -107,9 +106,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                        <div class="col-plvps align-self-center" style="background-size: cover">
                             <div class="about__img mb-40">
-                                <img src="{% static '/images/39ce6b1c89424da851bcfcc0cfa247be.jpg'%}" alt="about" style="width: 500px; padding-top: 12px;">
+                                <img src="{% static '/images/39ce6b1c89424da851bcfcc0cfa247be.jpg'%}" alt="about" class="img-fluid">
                             </div>
                         </div>
                     </div>
