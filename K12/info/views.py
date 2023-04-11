@@ -14,7 +14,7 @@ def order_call(request):
             name = form.cleaned_data['name']
             subject = form.cleaned_data['subject']
             send_mail(
-                'Заказ обратного звонка',
+                f'Заказ обратного звонка - {subject}',
                 f'{subject}\n{name}\n{str(phone)}',
                 'flexa@k12.spb.ru',
                 ['noc@k12.spb.ru', ]
