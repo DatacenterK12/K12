@@ -1,6 +1,6 @@
-from django.views.generic.base import TemplateView
-from django.http import JsonResponse
 from django.core.mail import send_mail
+from django.http import JsonResponse
+from django.views.generic.base import TemplateView
 
 from .forms import PhoneForm
 
@@ -20,9 +20,9 @@ def order_call(request):
                 ['noc@k12.spb.ru', ]
             )
             return JsonResponse({"status": "Запрос отправлен!"}, status=200)
-        else:
-            errors = form.errors.as_json()
-            return JsonResponse({"errors": errors}, status=400)
+        errors = form.errors.as_json()
+        return JsonResponse({"errors": errors}, status=400)
+    return JsonResponse({"Method not alowed"}, status=400)
 
 
 class MainPage(TemplateView):
@@ -59,5 +59,3 @@ class About(TemplateView):
 
 class Contact(TemplateView):
     template_name = 'info/contact.html'
-
-
