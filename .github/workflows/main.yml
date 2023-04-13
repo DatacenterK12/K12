@@ -1,9 +1,9 @@
 name: K12 - workflow
 
 on:
-  merge_group:
+  push:
     branches:
-      - 'main'
+      - main
 
 jobs:
   tests:
