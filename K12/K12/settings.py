@@ -34,9 +34,6 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
-    'info.apps.InfoConfig',
-    'users.apps.UsersConfig',
-    'core.apps.CoreConfig',
     'phonenumber_field',
     'sorl.thumbnail',
     'django.contrib.admin',
@@ -45,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'info.apps.InfoConfig',
+    'users.apps.UsersConfig',
+    'core.apps.CoreConfig',
 ]
 
 MIDDLEWARE = [
