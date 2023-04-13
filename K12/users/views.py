@@ -1,13 +1,12 @@
 from django.shortcuts import get_object_or_404, render
-from django.views.generic import CreateView
 from django.urls import reverse_lazy
+from django.views.generic import CreateView
 
-from .models import Company, UserCompany
 from .forms import CreationForm
+from .models import Company
 
 
 def test(request):
-    user_company = UserCompany.objects.all()
     company = get_object_or_404(Company, pk=1)
     context = {
         'company': company,
