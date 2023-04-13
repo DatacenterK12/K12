@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   web:
-    build: ../K12/
+    build: petrichao/k12:latest
     restart: always
     volumes:
       - static_value:/app/static/
