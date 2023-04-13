@@ -66,6 +66,7 @@ jobs:
           script: |
             docker compose stop
             docker compose rm web
+            docker pull petrichao/k12:latest
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
