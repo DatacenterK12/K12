@@ -124,12 +124,12 @@ USE_TZ = True
 
 # Email data
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'mail.nic.ru'
-# EMAIL_PORT = 25
-# EMAIL_HOST_USER = 'flexa@k12.spb.ru'
-# DEFAULT_FROM_EMAIL = 'flexa@k12.spb.ru'
-# EMAIL_HOST_PASSWORD = 'RG8tku95'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.nic.ru'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'flexa@k12.spb.ru'
+DEFAULT_FROM_EMAIL = 'flexa@k12.spb.ru'
+EMAIL_HOST_PASSWORD = 'RG8tku95'
 
 # Static data
 
