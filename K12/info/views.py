@@ -20,7 +20,6 @@ def order_call(request):
                 ['ep@k12.spb.ru', ]
             )
             return JsonResponse({"status": "Запрос отправлен!"}, status=200)
-        errors = form.errors.as_json()
         return JsonResponse({"errors": 'Слишком многа букав!!!!'}, status=400)
     return JsonResponse({"Method not alowed"}, status=500)
 
