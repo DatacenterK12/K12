@@ -17,7 +17,7 @@ def order_call(request):
                 f'Заказ обратного звонка - {subject}',
                 f'{subject}\n{name}\n{str(phone)}',
                 'flexa@k12.spb.ru',
-                ['ep@k12.spb.ru', ]
+                ['noc@k12.spb.ru', ]
             )
             return JsonResponse({"status": "Запрос отправлен!"}, status=200)
         return JsonResponse({"errors": 'Слишком многа букав!!!!'}, status=400)
