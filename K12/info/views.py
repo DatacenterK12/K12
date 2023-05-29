@@ -7,7 +7,7 @@ from .forms import PhoneForm
 
 def order_call(request):
     form = PhoneForm()
-    if request.method == "POST" and request.is_ajax():
+    if request.method == "POST":
         form = PhoneForm(request.POST)
         if form.is_valid():
             phone = form.cleaned_data['phone']
@@ -17,12 +17,12 @@ def order_call(request):
                 f'Заказ обратного звонка - {subject}',
                 f'{subject}\n{name}\n{str(phone)}',
                 'flexa@k12.spb.ru',
-                ['noc@k12.spb.ru', ]
+                ['ep@k12.spb.ru', ]
             )
             return JsonResponse({"status": "Запрос отправлен!"}, status=200)
         errors = form.errors.as_json()
-        return JsonResponse({"errors": errors}, status=400)
-    return JsonResponse({"Method not alowed"}, status=400)
+        return JsonResponse({"errors": 'Слишком многа букав!!!!'}, status=400)
+    return JsonResponse({"Method not alowed"}, status=500)
 
 
 class MainPage(TemplateView):

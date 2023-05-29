@@ -13,7 +13,8 @@
                         и наши менеджеры свяжутся с вами в ближайшее время
                     </p>
                     <div class="form-group" style="background-size: cover">
-                        <form action="{% url 'info:OrderCall' %}" method="post" id="call-form">
+                        <form action="{% url 'info:OrderCall' %}" method="post"
+                              id="call-form">
                             {% csrf_token %}
                             <input type="text" name="subject" class="form-control" placeholder="Тема обращения" required>
                             <input type="text" name="name" class="form-control" placeholder="ФИО" required>

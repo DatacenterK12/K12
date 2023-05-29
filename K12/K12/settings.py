@@ -25,10 +25,11 @@ SECRET_KEY = 'django-insecure-m+*=yhc-9_s0=al59u8)@_^c^*v$rk$p4(t(5twx_oj9qip8f(
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '[::1]',
-    'web',
+    # 'localhost',
+    # '127.0.0.1',
+    # '[::1]',
+    # 'web',
+    '*',
 ]
 
 # Application definition
@@ -123,18 +124,18 @@ USE_TZ = True
 
 # Email data
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.nic.ru'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = 'flexa@k12.spb.ru'
-DEFAULT_FROM_EMAIL = 'flexa@k12.spb.ru'
-EMAIL_HOST_PASSWORD = 'RG8tku95'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'mail.nic.ru'
+# EMAIL_PORT = 25
+# EMAIL_HOST_USER = 'flexa@k12.spb.ru'
+# DEFAULT_FROM_EMAIL = 'flexa@k12.spb.ru'
+# EMAIL_HOST_PASSWORD = 'RG8tku95'
 
 # Static data
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 # Media data
 
