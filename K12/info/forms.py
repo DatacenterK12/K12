@@ -6,3 +6,4 @@ class PhoneForm(forms.Form):
     name = forms.CharField(max_length=100)
     subject = forms.CharField(max_length=500)
     phone = PhoneNumberField(region="RU")
+    email = forms.EmailField()
